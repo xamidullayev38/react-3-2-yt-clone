@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box, CssBaseline } from '@mui/material';
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
+import Main from './layout/Main';
 
 function App() {
   const [open, setOpen] = useState(true);
@@ -21,16 +22,13 @@ function App() {
       <Box
         component="main"
         sx={{
-          flexGrow: 1,
-          p: 3,
-          mt: '64px', 
+          p: 1,
           width: '100%',
-          color: 'white'
+          color: 'white',
+          overflow: 'hidden'
         }}
       >
-        <div style={{ padding: '20px', border: '1px dashed #333' }}>
-           Main Content Placeholder (Video Grid coming soon...)
-        </div>
+           <Main />
       </Box>
     </Box>
   );
