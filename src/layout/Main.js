@@ -1,10 +1,8 @@
 import { Box, Grid, Link } from "@mui/material";
 import CategoryBar from "../components/CategoryBar";
 import Videos from "../components/Videos";
-import img from "../assets/img/2.png";
 import { useEffect, useState } from "react";
 import { getVideos } from "../api";
-const dummyVideos = [];
 export default function Main() {
   const [lists, setLists] = useState([]);
   useEffect(() => {
